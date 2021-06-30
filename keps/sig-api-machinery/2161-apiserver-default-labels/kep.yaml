@@ -1,0 +1,33 @@
+title: Immutable label selectors for all namespaces 
+kep-number: 2161
+authors:
+  - "@thockin"
+  - "@jayunit100"
+  - "@rikatz"
+  - "@abhiraut"
+  - "@andrewsykim"
+owning-sig: sig-api-machinery
+participating-sigs:
+  - sig-api-machinery
+  - sig-network
+status: implemented
+creation-date: 2020-11-22
+reviewers:
+  - "@liggitt"
+  - "@nikhita"
+  - "@thockin"
+  - "@deads2k"
+approvers:
+  - "@liggitt"
+  - "@deads2k"
+replaces:
+stage: stable
+latest-milestone: "v1.22"
+milestone:
+  beta: "v1.21"
+  stable: "v1.22"
+feature-gates:
+  - name: NamespaceDefaultLabelName
+    components:
+      - kube-apiserver
+disable-supported: false

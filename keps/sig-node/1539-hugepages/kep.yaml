@@ -1,0 +1,29 @@
+title: HugePages
+kep-number: 1539
+authors:
+  - "@derekwaynecarr"
+  - "@sjenning"
+  - "@PiotrProkop"
+owning-sig: sig-node
+participating-sigs:
+  - sig-scheduling
+reviewers:
+  - "@vishnu"
+approvers:
+  - "@dawnchen"
+prr-approvers:
+  - "@ehashman"
+stage: stable
+latest-milestone: "v1.22"
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.18"
+  beta: "v1.19"
+  stable: "v1.22"
+editor: Derek Carr
+creation-date: 2019-01-29
+last-updated: 2021-05-12
+status: implemented
+see-also:
+replaces:
+superseded-by:

@@ -1,0 +1,27 @@
+title: Support for CSI Plugins on Windows Nodes
+kep-number: 1122
+authors:
+  - "@ddebroy"
+  - "@jingxu97"
+owning-sig: sig-windows
+participating-sigs:
+  - sig-windows
+  - sig-storage
+reviewers:
+  - "@patricklang"
+  - "@michmike"
+  - "@jingxu97"
+  - "@yujuhong"
+  - "@msau42"
+approvers:
+  - "@patricklang"
+  - "@msau42"
+creation-date: 2019-07-14
+last-updated: 2021-05-12
+status: implementable
+stage: stable
+latest-milestone: "v1.22"
+milestone:
+  alpha: "v1.18"
+  beta: "v1.19"
+  stable: "v1.22"

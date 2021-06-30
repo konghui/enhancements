@@ -1,0 +1,33 @@
+title: Protomote sysctl annotations to fields
+kep-number: 34
+authors:
+  - "@ingvagabund"
+owning-sig: sig-node
+participating-sigs:
+  - sig-node
+  - sig-auth
+reviewers:
+  - "@sjenning"
+  - "@derekwaynecarr"
+approvers:
+  - "@derekwaynecarr"
+prr-approvers:
+  - "@johnbelamaric"
+editor:
+creation-date: 2018-04-30
+last-updated: 2021-04-08
+status: implemented
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.21"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.4"
+  beta: "v1.11"
+  stable: "v1.21"

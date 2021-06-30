@@ -1,0 +1,47 @@
+title: In-place Update of Pod Resources
+kep-number: 1287
+authors:
+  - "@kgolab"
+  - "@bskiba"
+  - "@schylek"
+  - "@vinaykul"
+owning-sig: sig-node
+participating-sigs:
+  - sig-autoscaling
+  - sig-scheduling
+status: implementable
+creation-date: 2018-11-06
+reviewers:
+  - "@bsalamat"
+  - "@dashpole"
+  - "@derekwaynecarr"
+  - "@dchen1107"
+  - "@ahg-g"
+  - "@k82cn"
+approvers:
+  - "@dchen1107"
+  - "@derekwaynecarr"
+  - "@ahg-g"
+  - "@mwielgus"
+prr-approvers:
+  - "@ehashman"
+see-also:
+  - "/keps/sig-node/2273-kubelet-container-resources-cri-api-changes"
+replaces:
+
+stage: "alpha"
+
+latest-milestone: "v1.22"
+
+milestone:
+  alpha: "v1.22"
+  beta: "v1.23"
+  stable: "v1.25"
+
+feature-gates:
+  - name: InPlacePodVerticalScaling
+    components:
+      - kube-apiserver
+      - kube-scheduler
+      - kubelet
+disable-supported: true
