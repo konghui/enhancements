@@ -1,0 +1,55 @@
+title: PSP Replacement Policy
+kep-number: 2579
+authors:
+  - "@tallclair"
+  - "@liggitt"
+owning-sig: sig-auth
+participating-sigs:
+  - sig-security
+  - sig-windows          # For Windows support
+  - sig-node             # For Pod Security Standards definition
+  - sig-instrumentation  # For metrics definition
+status: implemented
+creation-date: 2021-03-19
+reviewers:
+  - "@mrunalp"  # SIG-Node representative, Pod Security Standards
+  - "@dashpole" # SIG-Instrumentation representative, metrics
+  - "@marosset" # SIG-Windows representative
+  - "@ritazh"
+approvers:
+  - "@deads2k"
+  - "@enj"
+  - "@IanColdwater"
+  - "@mikedanese"
+  - "@tabbysable"
+see-also:
+  - https://github.com/kubernetes/enhancements/issues/2802
+replaces: []
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.25"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.22"
+  beta: "v1.23"
+  stable: "v1.25"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: PodSecurity
+    components:
+      - kube-apiserver (PodSecurity admission plugin)
+disable-supported: false
+
+# The following PRR answers are required at beta release
+metrics:
+  - pod_security_evaluations_total
+  - pod_security_exemptions_total
+  - pod_security_errors_total

@@ -1,0 +1,30 @@
+title: Provide fsgroup of pod to CSI driver on mount
+kep-number: 2317
+authors:
+  - "@gnufied"
+  - "@verult"
+  - "@bertinatto"
+owning-sig: sig-storage
+participating-sigs:
+status: implemented
+creation-date: 2021-01-22
+reviewers:
+  - "@msau42"
+  - "@jsafrane"
+approvers:
+  - "@msau42"
+see-also:
+  - https://github.com/kubernetes/enhancements/issues/1682
+replaces:
+stage: stable
+latest-milestone: "v1.26"
+milestone:
+  alpha: "v1.22"
+  beta: "v1.23"
+  stable: "v1.26"
+feature-gates:
+  - name: DelegateFSGroupToCSIDriver
+    components:
+      - kubelet
+disable-supported: true
+metrics:

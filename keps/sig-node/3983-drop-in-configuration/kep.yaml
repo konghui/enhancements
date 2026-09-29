@@ -1,0 +1,36 @@
+title: Add support for a kubelet drop-in configuration directory
+kep-number: 3983
+authors:
+  - "@haircommander"
+  - "@yuqi-zhang"
+  - "@sohankunkerkar"
+owning-sig: sig-node
+status: implemented
+creation-date: 2023-05-04
+last-updated: 2024-09-30
+reviewers:
+  - "@harche"
+approvers:
+  - "@SergeyKanzhelev" # sig-node-assigned-approver
+  - "@mrunalp"
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.35"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.28"
+  beta: "v1.31"
+  stable: "v1.35"
+
+# The following PRR answers are required at alpha release
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics:
+  - "N/A"

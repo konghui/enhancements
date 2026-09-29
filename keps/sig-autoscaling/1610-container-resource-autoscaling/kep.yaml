@@ -1,0 +1,30 @@
+title: Container Resource based Autoscaling
+kep-number: 1610
+authors:
+  - "@arjunrn"
+  - "@sanposhiho"
+owning-sig: sig-autoscaling
+reviewers:
+  - "@josephburnett"
+  - "@mwielgus"
+  - "@gjtempleton"
+approvers:
+  - "@josephburnett"
+  - "@gjtempleton"
+creation-date: 2020-02-18
+last-updated: 2024-01-15
+status: implemented
+
+latest-milestone: "1.30"
+stage: "stable"
+
+milestone:
+  alpha: "v1.20"
+  beta: "v1.27"
+  stable: "v1.30"
+
+feature-gates:
+  - name: HPAContainerMetrics
+    components:
+      - kube-controller-manager
+disable-supported: true

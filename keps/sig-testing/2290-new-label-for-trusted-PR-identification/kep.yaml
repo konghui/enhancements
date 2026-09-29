@@ -1,0 +1,25 @@
+title: New label for trusted PR identification
+kep-number: 2290
+authors:
+  - matthyx
+owning-sig: sig-testing
+participating-sigs:
+  - sig-contributor-experience
+reviewers:
+  - fejta
+  - cjwagner
+  - BenTheElder
+  - cblecker
+  - stevekuznetsov
+approvers:
+  - spiffxp
+editor: spiffxp
+creation-date: 2018-06-25
+last-updated: 2021-08-16
+status: implemented
+stage: stable
+latest-milestone: v1.13
+milestone:
+  alpha: v1.13
+  beta: v1.13
+  stable: v1.14

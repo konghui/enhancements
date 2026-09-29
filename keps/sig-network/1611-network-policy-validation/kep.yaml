@@ -1,0 +1,23 @@
+title: Rearchitecting NetworkPolicy tests with a DSL for better upstream test coverage
+kep-number: 1611
+authors:
+  - "@jayunit100"
+  - "@abhiraut"
+  - "@sedefsavas"
+  - "@McCodeman"
+  - "@mattfenwick"
+owning-sig: sig-network
+reviewers:
+  - "@bowei"
+  - TBD
+approvers:
+  - TBD
+editor: TBD
+creation-date: 2020-02-04
+last-updated: 2021-03-05
+status: implemented
+
+latest-milestone: "v1.20"
+stage: "stable"
+milestone:
+  stable: "v1.20"

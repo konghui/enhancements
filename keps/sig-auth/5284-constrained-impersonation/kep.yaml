@@ -1,0 +1,35 @@
+title: Constrained Impersonation
+kep-number: 5284
+authors:
+  - "@qiujian16"
+owning-sig: sig-auth
+status: implementable
+creation-date: 2025-05-07
+reviewers:
+  - "@deads2k"
+  - "@enj"
+approvers:
+  - "@enj"
+  - "@liggitt"
+
+stage: beta
+
+latest-milestone: "v1.36"
+
+milestone:
+  alpha: "v1.35"
+  beta: "v1.36"
+  stable: "v1.38"
+
+feature-gates:
+  - name: ConstrainedImpersonation
+    components:
+      - kube-apiserver
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics:
+  - apiserver_impersonation_attempts_total{status}
+  - apiserver_impersonation_duration_seconds{status}
+  - apiserver_impersonation_authorization_attempts_total{mode, decision}
+  - apiserver_impersonation_authorization_duration_seconds{mode, decision}

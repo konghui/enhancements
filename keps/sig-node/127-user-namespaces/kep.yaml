@@ -1,0 +1,35 @@
+title: Support User Namespaces
+kep-number: 127
+authors:
+  - "@rata"
+  - "@giuseppe"
+  - "@saschagrunert"
+owning-sig: sig-node
+participating-sigs: []
+status: implemented
+creation-date: 2021-11-02
+reviewers:
+  - "@SergeyKanzhelev" # sig-node-assigned-reviewer
+  - "@thockin"
+approvers:
+  - "@mrunalp" # sig-node-tl
+  - "@derekwaynecarr" # sig-node-tl
+  - "@haircommander" # sig-node-assigned-approver
+
+stage: stable
+latest-milestone: "v1.36"
+milestone:
+  alpha: "v1.25"
+  beta: "v1.35"
+  stable: "v1.36"
+
+feature-gates:
+  - name: UserNamespacesSupport
+    components:
+      - kubelet
+      - kube-apiserver
+disable-supported: false
+
+metrics:
+  - started_user_namespaced_pods_total (exposed by kubelet)
+  - started_user_namespaced_pods_errors_total (exposed by kubelet)

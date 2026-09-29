@@ -1,0 +1,20 @@
+title: Kustomize Plugin Composition API
+kep-number: 2299
+authors:
+  - "@knverey"
+  - "@campoy"
+owning-sig: sig-cli
+participating-sigs:
+  - sig-cli
+status: implementable
+creation-date: 2021-01-20
+reviewers:
+  - "@monopole"
+  - "@pwittrock"
+approvers:
+  - "@monopole"
+  - "@pwittrock"
+see-also:
+- "/keps/sig-cli/993-kustomize-generators-transformers"
+stage: alpha
+latest-milestone: "v1.24"

@@ -1,0 +1,33 @@
+title: Graduate IPv6 to beta
+kep-number: 1138
+authors:
+  - "@aojea"
+owning-sig: sig-network
+participating-sigs:
+reviewers:
+  - "@bentheelder"
+  - "@andrewsykim"
+  - "@khenidak"
+approvers:
+  - "@lachie83"
+  - "@thockin"
+editor: TBD
+creation-date: 2019-07-14
+last-updated: 2019-07-27
+status: implemented
+see-also:
+  - "/keps/sig-network/563-dual-stack"
+replaces:
+superseded-by:
+
+# The feature was declared alpha in 1.9 with no KEP. This KEP was only
+# about moving it to beta, and then it was later declared GA as part
+# of KEP-563 (dual-stack). But we use the beta version as
+# latest-milestone here because if we put 1.23 then
+# verify-kep-metadata.sh would require us to have a PRR file.
+latest-milestone: "v1.16"
+stage: stable
+milestone:
+  alpha: "v1.9"
+  beta: "v1.16"
+  stable: "v1.23"

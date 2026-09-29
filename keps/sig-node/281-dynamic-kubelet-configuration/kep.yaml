@@ -1,0 +1,48 @@
+title: Dynamic Kubelet Configuration
+kep-number: 281
+authors:
+  - "@mtaufen"
+owning-sig: sig-node
+participating-sigs:
+status: removed
+creation-date: 2017-04-26
+reviewers:
+  - "@lavalamp"
+  - "@liggitt"
+  - "@thockin"
+  - "@dchen1107"
+  - "@alejandroEsc"
+approvers:
+  - "@dchen1107"
+  - "@derekwaynecarr"
+see-also:
+replaces:
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: removed
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.26"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.8"
+  beta: "v1.11"
+  stable: "never"
+  deprecated: "v1.22"
+  removed: "v1.24" # from kubelet, left on control plane for skew nodes support
+  # fully removed in v1.26
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: "DynamicKubeletConfig"
+    components:
+      - kube-apiserver
+      - kubelet
+disable-supported: false
+
+# The following PRR answers are required at beta release
+metrics:

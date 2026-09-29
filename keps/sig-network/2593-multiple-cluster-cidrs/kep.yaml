@@ -1,0 +1,30 @@
+title: Enhanced NodeIPAM to support Discontiguous Cluster CIDR
+kep-number: 2593
+authors:
+  - "@rahulkjoshi"
+  - "@sdmodi"
+owning-sig: sig-network
+status: withdrawn
+creation-date: 2021-03-22
+reviewers:
+  - "@mskrocki"
+approvers:
+  - "@thockin"
+  - "@aojea"
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: beta
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.29"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+
+feature-gates:
+  - name: MultiCIDRRangeAllocator
+    components:
+      - kube-controller-manager
+disable-supported: true

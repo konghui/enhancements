@@ -1,0 +1,52 @@
+title: Pod networking ready condition
+kep-number: 3085
+authors:
+  - "@ddebroy"
+  - "@agamdua"
+  - "@kannon92"
+  - "@Priyankasaggu11929"
+owning-sig: sig-node
+participating-sigs:
+  - sig-network
+status: implementable
+creation-date: 2021-12-14
+reviewers:
+  - "@ehashman"
+  - "@dcbw"
+  - "@SergeyKanzhelev"
+  - "@dchen1107"
+  - "@mrunalp"
+approvers:
+  - "@aojea"
+  - "@mrunalp"
+
+see-also:
+  - none
+replaces:
+  - none
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.37"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.28"
+  beta: "v1.29"
+  stable: "v1.37"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: PodReadyToStartContainersCondition
+    components:
+      - kubelet
+disable-supported: false
+
+# The following PRR answers are required at beta release
+metrics:
+  - none

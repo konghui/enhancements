@@ -1,0 +1,22 @@
+title: Release Notes Improvements
+kep-number: 1733
+authors:
+  - "@jeefy"
+  - "@saschagrunert"
+owning-sig: sig-release
+participating-sigs:
+  - sig-contributor-experience
+  - sig-docs
+reviewers:
+  - "@spiffxp"
+  - "@marpaia"
+approvers:
+  - "@calebamiles"
+  - "@tpepper"
+  - "@justaugustus"
+editor: "@saschagrunert"
+creation-date: 2019-03-31
+last-updated: 2021-01-12
+status: implemented
+latest-milestone: '0.0'
+stage: stable

@@ -1,0 +1,23 @@
+title: Streaming JSON Encoding for LIST Responses
+kep-number: 5116
+authors:
+  - serathius
+owning-sig: sig-api-machinery
+status: implemented
+creation-date: 2025-01-31
+reviewers:
+  - liggitt
+approvers:
+  - deads2k
+stage: stable
+latest-milestone: "v1.34"
+milestone:
+  beta: "v1.33"
+  stable: "v1.34"
+feature-gates:
+  - name: StreamingCollectionEncodingToJSON
+    components:
+      - kube-apiserver
+  - name: StreamingCollectionEncodingToProtobuf
+    components:
+      - kube-apiserver

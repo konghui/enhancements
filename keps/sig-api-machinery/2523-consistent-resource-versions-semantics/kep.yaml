@@ -1,0 +1,17 @@
+title: consistent-resource-version-semantics
+kep-number: 2523
+authors:
+  - "@jpbetz"
+owning-sig: sig-api-machinery
+reviewers:
+  - "@lavalamp"
+  - "@wojtek-t"
+approvers:
+  - "@lavalamp"
+  - "@deads2k"
+creation-date: 2020-03-09
+last-updated: 2020-06-27
+status: implemented
+
+latest-milestone: "1.19"
+stage: "stable"

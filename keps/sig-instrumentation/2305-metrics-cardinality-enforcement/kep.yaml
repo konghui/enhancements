@@ -1,0 +1,27 @@
+title: Dynamic Cardinality Enforcement
+kep-number: 2305
+authors:
+  - "@logicalhan"
+  - "@lilic"
+  - "@yoyinzyc"
+  - "@rexagod"
+owning-sig: sig-instrumentation
+participating-sigs:
+  - sig-instrumentation
+reviewers:
+  - "@dashpole"
+  - "@brancz"
+  - "@ehashman"
+  - "@x13n"
+approvers:
+  - "@ehashman"
+creation-date: 2020-04-15
+last-updated: 2024-01-20
+stage: stable
+status: implemented
+latest-milestone: "v1.31"
+milestone:
+  alpha: "v1.21"
+  beta: "v1.28"
+  stable: "v1.30"
+disable-supported: true

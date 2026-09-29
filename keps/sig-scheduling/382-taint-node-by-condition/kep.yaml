@@ -1,0 +1,21 @@
+title: Graduate TaintNodeByCondition to GA
+kep-number: 382
+authors:
+  - "@draveness"
+owning-sig: sig-scheduling
+participating-sigs:
+  - sig-node
+reviewers:
+  - TBD
+  - "@k82cn"
+approvers:
+  - TBD
+  - "@k82cn"
+editor: TBD
+creation-date: 2019-10-12
+last-updated: 2019-10-12
+status: implemented
+see-also:
+  - "https://github.com/kubernetes/design-proposals-archive/blob/master/scheduling/taint-node-by-condition.md"
+latest-milestone: '0.0'
+stage: stable

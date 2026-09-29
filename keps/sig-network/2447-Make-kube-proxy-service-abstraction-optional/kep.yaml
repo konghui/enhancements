@@ -1,0 +1,18 @@
+title: Make kube-proxy service abstraction optional
+kep-number: 2447
+authors:
+  - "@bradhoekstra"
+owning-sig: sig-network
+participating-sigs:
+reviewers:
+  - "@freehan"
+approvers:
+  - "@thockin"
+editor: "@bradhoekstra"
+creation-date: 2018-10-17
+last-updated: 2018-11-12
+status: implemented
+latest-milestone: "v1.14"
+stage: stable
+milestone:
+  stable: "v1.14"

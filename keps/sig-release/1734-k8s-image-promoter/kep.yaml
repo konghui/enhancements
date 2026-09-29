@@ -1,0 +1,20 @@
+title: Image Promoter
+kep-number: 1734
+authors:
+  - "@javier-b-perez"
+owning-sig: sig-release
+participating-sigs:
+  - sig-k8s-infra
+reviewers:
+  - "@AishSundar"
+  - "@BenTheElder"
+  - "@dims"
+  - "@listx"
+approvers:
+  - "@thockin"
+creation-date: 2018-09-05
+last-updated: 2018-11-14
+status: implementable
+
+latest-milestone: "0.0"
+stage: "alpha"

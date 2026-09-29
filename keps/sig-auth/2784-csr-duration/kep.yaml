@@ -1,0 +1,39 @@
+title: CSR Duration
+kep-number: 2784
+authors:
+  - "@enj"
+owning-sig: sig-auth
+participating-sigs: []
+status: implemented
+creation-date: 2021-06-17
+reviewers:
+  - "@liggitt"
+  - "@smarterclayton"
+  - "@mikedanese"
+approvers:
+  - "@liggitt"
+  - "@smarterclayton"
+  - "@mikedanese"
+
+see-also:
+  - "/keps/sig-auth/1513-certificate-signing-request"
+
+stage: stable
+
+latest-milestone: "v1.24"
+
+milestone:
+  beta: "v1.22"
+  stable: "v1.24"
+
+
+feature-gates:
+  - name: CSRDuration
+    components:
+      - kube-apiserver
+      - kube-controller-manager
+disable-supported: true
+
+metrics:
+  - apiserver_certificates_registry_csr_honored_duration_total
+  - apiserver_certificates_registry_csr_requested_duration_total

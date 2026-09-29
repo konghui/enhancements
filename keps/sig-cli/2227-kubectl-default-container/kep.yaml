@@ -1,0 +1,43 @@
+title: kubectl default container
+kep-number: 2227
+authors:
+  - "@pacoxu"
+owning-sig: sig-cli
+participating-sigs:
+status: implementable
+creation-date: 2020-12-16
+last-updated: 2023-01-20
+reviewers:
+  - "@dougsland"
+  - "@eddiezane"
+  - "@soltysh"
+  - "@howardjohn"
+  - "@rikatz"
+approvers:
+  - "@soltysh"
+  - "@rikatz"
+see-also:
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.27"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.21"
+  beta: "v1.24"
+  stable: "v1.27"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+# 
+# kubectl does not use feature-gates
+feature-gates: []
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics: []

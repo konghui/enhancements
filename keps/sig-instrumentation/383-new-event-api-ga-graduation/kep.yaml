@@ -1,0 +1,27 @@
+title: New Event API GA Graduation
+kep-number: 383
+authors:
+  - "@gmarek"
+  - "@chelseychen"
+owning-sig: sig-instrumentation
+participating-sigs:
+  - sig-instrumentation
+  - sig-scalability
+  - sig-architecture
+reviewers:
+  - "@yastij"
+  - "@wojtek-t"
+approvers:
+  - "@brancz"
+creation-date: 2019-01-31
+last-updated: 2021-02-03
+status: implemented
+see-also:
+replaces:
+stage: stable
+latest-milestone: "v1.19"
+milestone:
+  stable: "v1.19"
+disable-supported: true
+metrics:
+  - apiserver_requests_total

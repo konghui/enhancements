@@ -1,0 +1,7 @@
+kep-number: 2599
+alpha:
+  approver: "@ehashman"
+beta:
+  approver: "@ehashman"
+stable:
+  approver: "@wojtek-t"

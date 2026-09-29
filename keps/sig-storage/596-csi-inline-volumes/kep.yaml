@@ -1,0 +1,34 @@
+title: Ephemeral Inline CSI Volumes
+kep-number: 596
+authors:
+  - "@vladimirvivien"
+  - "@pohly"
+  - "@dobsonj"
+owning-sig: sig-storage
+participating-sigs:
+  - sig-storage
+status: implemented
+creation-date: 2019-01-22
+reviewers:
+  - "@msau42"
+  - "@jsafrane"
+  - "@liggitt"
+approvers:
+  - "@thockin"
+  - "@saad-ali"
+
+stage: "stable"
+latest-milestone: "v1.25"
+
+milestone:
+  alpha: "v1.15"
+  beta: "v1.16"
+  stable: "v1.25"
+
+feature-gates:
+  - name: CSIInlineVolume
+    components:
+      - kubelet
+      - kube-apiserver
+
+metrics:

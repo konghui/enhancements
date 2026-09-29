@@ -1,0 +1,37 @@
+title: Relaxed validation for Services names
+kep-number: 5311
+authors:
+  - "@adrianmoisey"
+owning-sig: sig-network
+participating-sigs: []
+status: implemented
+creation-date: 2025-05-17
+reviewers:
+  - "@aojea"
+  - "@danwinship"
+  - "@thockin"
+approvers:
+  - "@aojea"
+  - "@danwinship"
+  - "@thockin"
+see-also: []
+replaces: []
+
+stage: stable
+
+latest-milestone: "v1.37"
+
+milestone:
+  alpha: "v1.34"
+  beta: "v1.36"
+  stable: "v1.37"
+
+feature-gates:
+  - name: RelaxedServiceNameValidation
+    components:
+      - kube-apiserver
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics:
+  - apiserver_request_total

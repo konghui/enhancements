@@ -1,0 +1,25 @@
+title: Graduate CoreDNS to GA
+kep-number: 427
+authors:
+  - "@johnbelamaric"
+  - "@rajansandeep"
+owning-sig: sig-network
+participating-sigs:
+  - sig-cluster-lifecycle
+reviewers:
+  - "@bowei"
+  - "@thockin"
+approvers:
+  - "@thockin"
+editor: "@rajansandeep"
+creation-date: 2018-03-21
+last-updated: 2018-05-18
+status: implemented
+see-also:
+  - "https://github.com/kubernetes/community/pull/2167"
+latest-milestone: "v1.11"
+stage: stable
+milestone:
+  alpha: "v1.9"
+  beta: "v1.10"
+  stable: "v1.11"

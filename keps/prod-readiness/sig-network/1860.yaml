@@ -1,0 +1,10 @@
+# The KEP must have an approver from the
+# "prod-readiness-approvers" group 
+# of http://git.k8s.io/enhancements/OWNERS_ALIASES
+kep-number: 1860
+alpha:
+  approver: "@wojtek-t"
+beta:
+  approver: "@wojtek-t" # temptative
+stable:
+  approver: "@wojtek-t"

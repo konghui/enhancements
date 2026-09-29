@@ -1,8 +1,9 @@
 # See the OWNERS docs at https://go.k8s.io/owners
 
-reviewers:
-  - cblecker
 approvers:
-  - cblecker
+  - kep-tools-approvers
+reviewers:
+  - kep-tools-reviewers
+
 labels:
-  - sig/contributor-experience
+  - area/enhancements

@@ -1,0 +1,33 @@
+title: Volume Group Snapshot 
+kep-number: 3476 
+authors:
+  - "@xing-yang"
+  - "@jingxu97"
+owning-sig: sig-storage
+participating-sigs:
+status: implementable
+creation-date: 2020-02-12
+reviewers:
+  - "@msau42"
+  - "@saad-ali"
+  - "@thockin"
+approvers:
+  - "@msau42"
+  - "@saad-ali"
+  - "@thockin"
+see-also:
+replaces:
+
+latest-milestone: "v1.36"
+stage: "stable"
+milestone:
+  alpha: "v1.27"
+  beta: "v1.32"
+  stable: "v1.36"
+
+feature-gates:
+disable-supported: true
+
+metrics:
+- snapshot_controller_operation_total_seconds
+- csi_sidecar_operations_seconds

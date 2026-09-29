@@ -1,0 +1,22 @@
+title: Remove transient node predicates from KCCM's service controller
+kep-number: "3458"
+authors:
+  - "@alexanderConstantinescu"
+owning-sig: sig-network
+reviewers:
+  - "@thockin"
+approvers:
+  - "@thockin"
+creation-date: "2022-08-07"
+last-updated: v1.30
+status: implemented
+stage: stable
+latest-milestone: "v1.30"
+milestone:
+  beta: "v1.27"
+  stable: "v1.30"
+feature-gates:
+  - name: StableLoadBalancerNodeSet
+    components:
+      - cloud-controller-manager
+disable-supported: true

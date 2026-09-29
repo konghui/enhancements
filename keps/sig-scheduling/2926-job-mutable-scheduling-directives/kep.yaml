@@ -1,0 +1,44 @@
+title: Mutable Node Scheduling Directives for Jobs
+kep-number: 2926
+authors:
+  - "@ahg-g"
+owning-sig: sig-scheduling
+participating-sigs:
+  - sig-apps
+  - sig-api-machinery
+status: implemented
+creation-date: 2021-09-01
+reviewers:
+  - "@Huang-Wei"
+  - "@soltysh"
+approvers:
+  - "@Huang-Wei"
+
+see-also:
+  - "/keps/sig-apps/2232-suspend-jobs"
+  - "/keps/sig-apps/5440-mutable-job-pod-resource-updates"
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.27"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  beta: "v1.23"
+  stable: "v1.27"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: JobMutableNodeSchedulingDirectives
+    components:
+      - kube-apiserver
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics:
+

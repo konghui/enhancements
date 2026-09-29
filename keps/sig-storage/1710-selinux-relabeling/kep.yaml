@@ -1,0 +1,57 @@
+title: Skip SELinux relabeling of volumes
+kep-number: 1710
+authors:
+  - "@jsafrane"
+owning-sig: sig-storage
+participating-sigs:
+  - sig-node
+status: implemented
+creation-date: 2020-02-18
+reviewers:
+  - "@msau42"
+  - "@gnufied"
+  - "@rhatdan"
+  - "@haircommander"
+  - "@saschagrunert"
+  - "@tallclair"
+approvers:
+  - "@saad-ali"
+see-also:
+  - /keps/sig-storage/695-skip-permission-change/README.md
+stage: stable
+latest-milestone: "v1.37"
+milestone:
+  alpha: "v1.24"  # SELinuxMountReadWriteOncePod
+  beta: "v1.27"   # SELinuxMountReadWriteOncePod
+  stable: "v1.36" # SELinuxMountReadWriteOncePod
+
+  # alpha: "v1.30"  # SELinuxMount
+  # alpha: "v1.32"  # SELinuxChangePolicy
+  # beta: "v1.33"   # SELinuxChangePolicy (enabled by default)
+  # stable: "v1.36"   # SELinuxChangePolicy
+  #
+  # beta: "v1.33"   # SELinuxMount (disabled by default)
+  # stable: "v1.37"   # SELinuxMount
+feature-gates:
+  - name: SELinuxMountReadWriteOncePod
+    components:
+      - kube-apiserver
+      - kubelet
+  - name: SELinuxMount
+    components:
+      - kube-apiserver
+      - kube-controller-manager
+      - kubelet
+  - name: SELinuxChangePolicy
+    components:
+      - kube-apiserver
+      - kube-controller-manager
+disable-supported: true
+metrics:
+  - volume_manager_selinux_container_errors_total
+  - volume_manager_selinux_container_warnings_total
+  - volume_manager_selinux_pod_context_mismatch_errors_total
+  - volume_manager_selinux_pod_context_mismatch_warnings_total
+  - volume_manager_selinux_volume_context_mismatch_errors_total
+  - volume_manager_selinux_volume_context_mismatch_warnings_total
+  - selinux_warning_controller_selinux_volume_conflict

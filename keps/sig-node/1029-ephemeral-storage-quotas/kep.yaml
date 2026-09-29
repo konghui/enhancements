@@ -1,0 +1,30 @@
+title: Quotas for Ephemeral Storage
+kep-number: 1029
+authors:
+  - "@RobertKrawitz"
+  - "@pacoxu"
+owning-sig: sig-node
+participating-sigs:
+  - sig-node
+status: implementable
+creation-date: 2018-09-06
+reviewers:
+  - "@dashpole"
+  - "@derekwaynecarr"
+approvers:
+  - "@dchen1107"
+  - "@derekwaynecarr"
+
+stage: "beta"
+
+latest-milestone: "1.31"
+
+milestone:
+  alpha: "1.15"
+  beta: "1.31"
+
+feature-gates:
+  - name: LocalStorageCapacityIsolationFSQuotaMonitoring
+    components:
+      - kubelet
+disable-supported: true

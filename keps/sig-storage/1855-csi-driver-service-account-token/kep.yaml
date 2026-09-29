@@ -1,0 +1,30 @@
+title: Service Account Token for CSI Driver
+kep-number: 1855
+authors:
+  - "@zshihang"
+owning-sig: sig-storage
+participating-sigs:
+  - sig-auth
+  - sig-storage
+reviewers:
+  - "@msau42"
+  - "@seh"
+  - "@jsafrane"
+  - "@mikedanese"
+approvers:
+  - "@msau42"
+  - "@mikedanese"
+creation-date: 2020-06-09
+last-updated: 2021-08-19
+status: implemented
+stage: stable
+latest-milestone: "v1.22"
+milestone:
+  alpha: "v1.20"
+  beta: "v1.21"
+  stable: "v1.22"
+feature-gates:
+  - name: CSIServiceAccountToken
+    components:
+      - kube-apiserver
+      - kubelet

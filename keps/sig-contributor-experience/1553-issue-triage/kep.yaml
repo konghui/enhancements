@@ -1,0 +1,24 @@
+title: Issue Triage Workflow and Automation
+kep-number: 1553
+status: implemented
+owning-sig: sig-contributor-experience
+participating-sigs:
+  - sig-release
+authors:
+  - "@justaugustus"
+  - "@mrbobbytables"
+  - "@nikhita"
+reviewers:
+  - "@alejandrox1"
+  - "@mrbobbytables"
+  - "@logicalhan"
+  - "@smourapina"
+  - "@thockin"
+approvers:
+  - "@cblecker"
+  - "@nikhita"
+creation-date: 2020-02-15
+see-also:
+replaces:
+latest-milestone: '0.0'
+stage: stable

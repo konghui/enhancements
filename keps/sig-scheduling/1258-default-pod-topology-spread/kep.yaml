@@ -1,0 +1,26 @@
+title: Default Pod Topology Spread
+kep-number: 1258
+authors:
+- "@alculquicondor"
+owning-sig: sig-scheduling
+status: implementable
+creation-date: 2019-09-26
+reviewers:
+- "@ahg-g"
+- "@Huang-Wei"
+approvers:
+- "@ahg-g"
+- "@Huang-Wei"
+see-also:
+- "/keps/sig-scheduling/895-pod-topology-spread"
+stage: stable
+latest-milestone: "v1.24"
+milestone:
+  alpha: "v1.19"
+  beta: "v1.20"
+  stable: "v1.24"
+feature-gates:
+  - name: DefaultPodTopologySpread
+    components:
+    - kube-scheduler
+disable-supported: true

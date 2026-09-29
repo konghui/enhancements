@@ -1,0 +1,21 @@
+title: Standardize Conditions
+kep-number: 1623
+authors:
+  - "@deads2k"
+owning-sig: sig-api-machinery
+participating-sigs:
+  - sig-api-machinery
+  - sig-apps
+  - sig-architecture
+status: implemented
+creation-date: 2020-03-23
+reviewers:
+  - "@lavalamp"
+  - "@smarterclayton"
+approvers:
+  - "@derekwaynecarr"
+  - "@liggitt"
+see-also:
+replaces:
+latest-milestone: '0.0'
+stage: stable

@@ -1,0 +1,34 @@
+kep-number: 2371
+title: cAdvisor-less, CRI-full Container and Pod Stats
+authors:
+  - "@haircommander"
+  - "@bobbypage"
+owning-sig: sig-node
+participating-sigs:
+status: implementable
+creation-date: 2021-01-27
+reviewers:
+  - "@mrunalp"
+  - "@marosset"
+  - "@mikebrow" # sig-node-assigned-reviewer
+  - "@SergeyKanzhelev"
+  - "@haircommander" # sig-node-assigned-reviewer
+approvers:
+  - "@dchen1107"
+  - "@haircommander" # sig-node-assigned-approver
+see-also:
+  - N/A
+replaces:
+  - N/A
+stage: beta
+latest-milestone: "v1.38"
+milestone:
+  alpha: "v1.29"
+  beta: "v1.37"
+feature-gates:
+  - name: PodAndContainerStatsFromCRI
+    components:
+      - kubelet
+disable-supported: true
+metrics:
+  - kubelet_metrics_provider

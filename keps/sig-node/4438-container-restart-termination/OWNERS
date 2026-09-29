@@ -1,0 +1,5 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+reviewers:
+  - SergeyKanzhelev # sig-node-assigned-reviewer
+  - tallclair # sig-node-assigned-reviewer

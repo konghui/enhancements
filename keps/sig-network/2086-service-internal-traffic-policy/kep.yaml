@@ -1,0 +1,41 @@
+title: Service Internal Traffic Policy
+kep-number: 2086
+authors:
+  - "@andrewsykim"
+owning-sig: sig-network
+participating-sigs:
+status: implemented
+creation-date: 2020-10-07
+reviewers:
+  - "robscott"
+  - "thockin"
+approvers:
+  - "@thockin"
+see-also:
+  - "/keps/sig-network/536-topology-aware-routing"
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.26"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.21"
+  beta: "v1.22"
+  stable: "v1.26"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: ServiceInternalTrafficPolicy
+    components:
+      - kube-apiserver
+      - kube-proxy
+disable-supported: true
+
+metrics:
+  - kubeproxy/sync_proxy_rules_local_no_endpoints

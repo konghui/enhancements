@@ -1,12 +1,10 @@
 # See the OWNERS docs at https://go.k8s.io/owners
 
 approvers:
-  - pm-maintainers
-  - sig-pm-leads
+  - enhancements-approvers
+  - sig-architecture-leads
 reviewers:
-  - features-maintainers
-  - kep-process-approvers
-  - kep-process-reviewers
-  - sig-release-leads
-labels:
-  - sig/pm
+  - enhancements-reviewers
+emeritus_approvers:
+  - justaugustus    # 2021-11-11
+  - LappleApple     # 2021-04-13: https://kubernetes.slack.com/archives/C1L57L91V/p1618348221078400

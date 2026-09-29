@@ -1,0 +1,46 @@
+title: Node Declared Features
+kep-number: 5328
+authors:
+  - "@pravk03"
+owning-sig: sig-node
+participating-sigs:
+  - sig-node
+  - sig-scheduling
+  - sig-autoscaling
+
+creation-date: "2025-05-27"
+reviewers: 
+  - '@SergeyKanzhelev' # sig-node-assigned-reviewer
+  - '@yujuhong'
+  - '@wojtek-t'
+  - '@dom4ha'
+  - '@macsko'
+  - '@haircommander' # sig-node-assigned-reviewer
+  - '@swatisehgal' # sig-node-assigned-reviewer
+approvers:
+- '@dchen1107' # sig-node-tl
+- '@tallclair' # sig-node-assigned-approver
+- '@dom4ha' # SIG-Scheduling
+- '@macsko' # SIG-Scheduling
+- '@jackfrancis' # SIG-Autoscaling
+- '@towca' # SIG-Autoscaling
+status: implementable
+stage: stable
+latest-milestone: "v1.37"
+milestone:
+  alpha: "v1.35"
+  beta:  "v1.36"
+  stable: "v1.37"
+
+feature-gates:
+  - name: NodeDeclaredFeatures
+    components:
+      - kubelet
+      - kube-scheduler
+      - kube-apiserver
+disable-supported: true
+
+metrics:
+  - scheduler_pending_pods
+  - scheduler_plugin_execution_duration_seconds
+  - kubelet_admission_rejections_total

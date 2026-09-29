@@ -1,0 +1,7 @@
+kep-number: 1847
+alpha:
+  approver: "@wojtek-t"
+beta:
+  approver: "@johnbelamaric"
+stable:
+  approver: "@johnbelamaric"

@@ -1,0 +1,32 @@
+title: Make Kubernetes aware of the load balancer behaviour
+kep-number: 1860
+authors:
+  - "@Sh4d1"
+owning-sig: sig-network
+participating-sigs:
+  - sig-cloud-provider
+status: implemented
+reviewers:
+  - "@thockin"
+  - "@cheftako"
+  - "@MorrisLaw"
+approvers:
+  - "@thockin"
+  - "@andrewsykim"
+
+stage: "stable"
+
+latest-milestone: "v1.32"
+
+milestone:
+  alpha: "v1.29"
+  beta: "v1.30"
+  stable: "v1.32"
+
+feature-gates:
+  - name: LoadBalancerIPMode
+    components:
+      - kube-apiserver
+      - kube-proxy
+      - cloud-controller-manager
+disable-supported: true

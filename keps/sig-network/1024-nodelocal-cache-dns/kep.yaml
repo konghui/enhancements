@@ -1,0 +1,24 @@
+title: NodeLocal DNS Cache
+kep-number: 1024
+authors:
+  - "@prameshj"
+owning-sig: sig-network
+reviewers:
+  - "@bowei"
+  - "@thockin"
+  - "@johnbelamaric"
+  - "@sdodson"
+approvers:
+  - "@bowei"
+  - "@thockin"
+creation-date: 2019-04-24
+last-updated: 2020-09-23
+status: implemented
+see-also:
+  - "/keps/sig-network/0030-nodelocal-dns-cache.md"
+latest-milestone: "v1.18"
+stage: stable
+milestone:
+  alpha: "v1.13"
+  beta: "v1.15"
+  stable: "v1.18"

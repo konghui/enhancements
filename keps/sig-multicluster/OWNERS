@@ -1,0 +1,15 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+reviewers:
+  - sig-multicluster-leads
+  - MrFreezeex
+  - munnerz
+  - RainbowMango
+  - ryanzhang-oss
+# Pending org membership
+# - corentone
+# - jnpacker
+approvers:
+  - sig-multicluster-leads
+labels:
+  - sig/multicluster

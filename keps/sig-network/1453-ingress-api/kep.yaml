@@ -1,0 +1,31 @@
+title: Graduate Ingress API to GA
+kep-number: 1453
+authors:
+  - "@bowei"
+  - "@cmluciano"
+  - "@robscott"
+owning-sig: sig-network
+participating-sigs:
+status: implemented
+creation-date: "2019-01-25"
+reviewers:
+  - "@aledbf"
+approvers:
+  - "@caseydavenport"
+  - "@ligitt"
+  - "@thockin"
+see-also:
+replaces:
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.19"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  beta: "v1.1"
+  stable: "v1.19"

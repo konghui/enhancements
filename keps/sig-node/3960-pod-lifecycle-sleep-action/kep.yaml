@@ -1,0 +1,43 @@
+title: "Pod lifecycle sleep action"
+kep-number: 3960
+authors:
+  - "@AxeZhan"
+owning-sig: sig-node
+participating-sigs: []
+status: implemented
+creation-date: 2023-04-22
+reviewers:
+  - "@thockin"
+  - "@bobbypage"
+approvers:
+  - "@SergeyKanzhelev" # sig-node-assigned-approver
+  - "@mrunalp"
+see-also: []
+replaces: []
+
+# The target maturity stage in the current dev cycle for this KEP.
+stage: stable
+
+# The most recent milestone for which work toward delivery of this KEP has been
+# done. This can be the current (upcoming) milestone, if it is being actively
+# worked on.
+latest-milestone: "v1.34"
+
+# The milestone at which this feature was, or is targeted to be, at each stage.
+milestone:
+  alpha: "v1.29"
+  beta: "v1.30"
+  stable: "v1.34"
+
+# The following PRR answers are required at alpha release
+# List the feature gate name and the components for which it must be enabled
+feature-gates:
+  - name: PodLifecycleSleepAction
+    components:
+      - kube-apiserver
+      - kubelet
+disable-supported: true
+
+# The following PRR answers are required at beta release
+metrics: 
+  - "sleep_action_terminated_early_total"

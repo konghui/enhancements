@@ -1,0 +1,36 @@
+title: Kubelet OpenTelemetry Tracing
+kep-number: 2831
+authors:
+  - "@husky-parul"
+  - "@somalley"
+  - "@dashpole"
+owning-sig: sig-instrumentation
+participating-sigs:
+  - sig-architecture
+  - sig-node
+status: implemented
+creation-date: 2021-07-21
+reviewers:
+  - "@saschagrunert"
+  - "@vrutkovs"
+  - "@dashpole"
+  - "@ehashman"
+  - "@wojtek-t"
+approvers:
+  - "@dashpole"
+  - "@ehashman"
+  - "@wojtek-t"
+see-also:
+  - "https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/647-apiserver-tracing"
+replaces:
+stage: stable
+latest-milestone: "v1.34"
+milestone:
+  alpha: "v1.25"
+  beta: "v1.27"
+  stable: "v1.34"
+feature-gates:
+  - name: KubeletTracing
+    components:
+      - kubelet
+disable-supported: true
